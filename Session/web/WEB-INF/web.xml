@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>SessionServlet</servlet-name>
+        <servlet-class>model.SessionServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>NameServlet</servlet-name>
+        <servlet-class>model.NameServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Session_Servlet</servlet-name>
+        <servlet-class>controller.Session_Servlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Name_Servlet</servlet-name>
+        <servlet-class>controller.Name_Servlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SessionServlet</servlet-name>
+        <url-pattern>/session</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>NameServlet</servlet-name>
+        <url-pattern>/name</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Session_Servlet</servlet-name>
+        <url-pattern>/sessions</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Name_Servlet</servlet-name>
+        <url-pattern>/namee</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
